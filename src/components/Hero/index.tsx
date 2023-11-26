@@ -3,10 +3,10 @@ import Reveal from "components/Reveal";
 const Hero = () => {
 	return (
 		<div className="relative col bg-hero-img bg-cover pb-24">
-			<div className="col font-bold py-60 bg-opacity-10 z-10 md:text-sm-hero text-xs-hero lg:text-hero lg:leading-hero items-center text-left text-[#000000bd]">
+			<div className="col font-bold py-60 bg-opacity-10 z-10 items-center text-left text-[#000000bd]">
 				<Reveal
 					children={
-						<div className="lg:w-[896px] md:w-[400px] w-[350px]">
+						<div className="lg:w-[896px] w-100% text-center hero">
 							Hi i'm Matthew
 						</div>
 					}
@@ -14,7 +14,7 @@ const Hero = () => {
 				/>
 				<Reveal
 					children={
-						<p className="lg:w-[896px] md:w-[400px] w-[350px]">
+						<p className="lg:w-[896px] w-100% text-center hero">
 							Blockchain &
 							<br /> Full-stack Developer
 						</p>

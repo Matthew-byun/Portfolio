@@ -1,11 +1,15 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const BlogDetails = () => {
+	const { search } = useLocation();
+	const img = search.slice(1);
+
 	return (
 		<div className="b-container gap-20">
 			<div className="col justify-center items-center gap-10 pt-10">
 				<p className="tracking-[.8rem]">DEVELOPMENT</p>
-				<p className="text-2xl font-bold">
+				<p className="sub-title font-bold">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
 					harum commodi quo perferendis illum debitis officia unde id rem
 					necessitatibus ab dicta, ea sit ullam, eligendi autem vel libero.
@@ -18,13 +22,9 @@ const BlogDetails = () => {
 					cumque maxime.
 				</p>
 			</div>
-			<img
-				className="rounded-lg"
-				src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
-				alt="image description"
-			/>
+			<img className="rounded-lg" src={img} alt="image description" />
 			<div className="col justify-center items-center gap-10 max-w-[896px] pt-4 mx-auto">
-				<p className="text-2xl font-bold">
+				<p className="sub-title font-bold">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
 					harum commodi quo perferendis illum debitis officia unde id rem
 					necessitatibus ab dicta, ea sit ullam, eligendi autem vel libero.
@@ -36,12 +36,8 @@ const BlogDetails = () => {
 					nemo commodi repellat sit magnam quidem recusandae quo dignissimos,
 					cumque maxime.
 				</p>
-				<img
-					className="rounded-lg"
-					src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
-					alt="image description"
-				/>
-				<p className="text-2xl font-bold">
+				<img className="rounded-lg" src={img} alt="image description" />
+				<p className="sub-title font-bold">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
 					harum commodi quo perferendis illum debitis officia unde id rem
 					necessitatibus ab dicta, ea sit ullam, eligendi autem vel libero.

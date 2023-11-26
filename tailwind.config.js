@@ -31,6 +31,9 @@ module.exports = {
       },
       inset: {
         '1/4': '30%'
+      },
+      screens: {
+        '400': '400px'
       }
     },
   },

@@ -10,6 +10,7 @@ const SecondaryNav = lazy(() => import("./components/Secondary_Nav"));
 const Home = lazy(() => import("./pages/Home"));
 const Project = lazy(() => import("./pages/Project"));
 const Blog = lazy(() => import("./pages/Blog"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path="/home" element={<Home />} />
 					<Route path="/project" element={<Project />} />
 					<Route path="/blog" element={<Blog />} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<Navigate to="/home" />} />
 				</Routes>
 				<Footer />

@@ -2,7 +2,14 @@
 
 @layer base {
 	body {
-		@apply box-border font-outfit;
+		@apply box-border font-outfit text-sm sm:text-base lg:text-lg;
+	}
+
+	.title {
+		@apply text-lg md:text-2xl lg:text-3xl font-bold;
+	}
+	.sub-title {
+		@apply text-base md:text-xl lg:text-2xl font-bold;
 	}
 
 	.col {
@@ -14,7 +21,7 @@
 	}
 
 	.b-container {
-		@apply col gap-4 max-w-[100em] m-auto px-[5em] pb-[150px];
+		@apply col gap-4 max-w-[100em] m-auto px-[.9em] lg:px-[5em] pb-[150px];
 	}
 
 	.pointer {
@@ -23,5 +30,9 @@
 
 	.tag_footer {
 		@apply text-[.9em] leading-[2em] font-[400] pointer;
+	}
+
+	.hero {
+		@apply text-[2em] 400:text-[3em] leading-[1em] md:!text-[4em] md:!leading-[1em] lg:text-hero lg:leading-hero;
 	}
 }

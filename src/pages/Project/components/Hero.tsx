@@ -1,11 +1,7 @@
-const Hero = () => {
+const Hero = ({ link }: { link: string }) => {
 	return (
 		<div className="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 pt-4">
-			<img
-				className="rounded-lg"
-				src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
-				alt="image description"
-			/>
+			<img className="rounded-lg" src={link} alt="image description" />
 
 			<div className="w-100% absolute text-lg text-white bottom-0">
 				<div className="flex gap-4 justify-center items-center bg-black py-2">

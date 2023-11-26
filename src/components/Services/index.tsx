@@ -7,12 +7,12 @@ const Services = () => {
 			<div>SERVICES</div>
 			<Reveal
 				children={
-					<div className="font-bold text-3xl">What can i do for you?</div>
+					<div className="font-bold title pb-6">What can i do for you?</div>
 				}
 				isSlideMotion={false}
 			/>
 
-			<Reveal
+			{/* <Reveal
 				children={
 					<div className="flex lg:grid lg:grid-cols-2 lg:gap-4">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
@@ -21,12 +21,14 @@ const Services = () => {
 						nisi molestias exercitationem!
 					</div>
 				}
-			/>
+			/> */}
 
 			<div className="flex lg:flex-nowrap flex-wrap gap-10">
-				<div className="col gap-4">
+				<div className="col gap-1 lg:gap-4">
 					<Reveal
-						children={<div className="font-bold text-2xl">Web development</div>}
+						children={
+							<div className="font-bold sub-title">Web development</div>
+						}
 						isSlideMotion={false}
 					/>
 					<Reveal
@@ -44,9 +46,9 @@ const Services = () => {
 						isSlideMotion={false}
 					/>
 				</div>
-				<div className="col gap-4">
+				<div className="col gap-1 lg:gap-4">
 					<Reveal
-						children={<div className="font-bold text-2xl">Web design</div>}
+						children={<div className="font-bold sub-title">Web design</div>}
 						isSlideMotion={false}
 					/>
 					<Reveal
@@ -64,9 +66,9 @@ const Services = () => {
 						isSlideMotion={false}
 					/>
 				</div>
-				<div className="col gap-4">
+				<div className="col gap-1 lg:gap-4">
 					<Reveal
-						children={<div className="font-bold text-2xl">Smart Contract</div>}
+						children={<div className="font-bold sub-title">Smart Contract</div>}
 						isSlideMotion={false}
 					/>
 					<Reveal

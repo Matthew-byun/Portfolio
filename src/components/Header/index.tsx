@@ -12,7 +12,7 @@ const Header = () => {
 	return (
 		<div className="row justify-between items-center text-center px-4 py-8 gap-2 border-t-8 border-black border-b-2">
 			<div
-				className="basis-1/6 md:text-3xl font-bold pointer"
+				className="basis-1/6 title font-bold pointer"
 				onClick={() => navigate("/")}
 				id="home"
 			>
@@ -23,7 +23,9 @@ const Header = () => {
 					HOME
 				</div>
 				<Link to="about" spy={true} smooth={true} offset={-150} duration={500}>
-					<div className="cursor-pointer">ABOUT</div>
+					<div className="cursor-pointer" onClick={() => navigate("/")}>
+						ABOUT
+					</div>
 				</Link>
 				<Link
 					to="services"
@@ -39,8 +41,9 @@ const Header = () => {
 					<Dropdown />
 				</div>
 			</div>
+
 			<div className="cursor-pointer basis-1/6 text-xs md:text-[16px] invisible md:visible">
-				CONTACT
+				<p onClick={() => navigate("/contact")}>CONTACT</p>
 			</div>
 		</div>
 	);

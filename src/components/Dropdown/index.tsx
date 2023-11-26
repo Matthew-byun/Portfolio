@@ -1,6 +1,7 @@
 import { useOnClickOutSide } from "hooks/useOnClickOutSide";
 import { useRef, useState } from "react";
 import IconDrop from "assets/img/down-arrow.png";
+import { useNavigate } from "react-router-dom";
 
 const Droplist = [
 	"Case Study",
@@ -13,6 +14,7 @@ const Droplist = [
 const Dropdown = () => {
 	const [isDrop, setIsDrop] = useState(false);
 	const ref = useRef(null);
+	const navigate = useNavigate();
 
 	useOnClickOutSide(ref, () => {
 		setIsDrop(false);
@@ -36,7 +38,7 @@ const Dropdown = () => {
 				{Droplist.map((item, index) => {
 					return (
 						<li className="basis-1/6 my-2" key={index}>
-							{item}
+							<p onClick={() => navigate("/")}>{item}</p>
 						</li>
 					);
 				})}

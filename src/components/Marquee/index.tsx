@@ -6,7 +6,7 @@ const MarqueeHero = () => {
 		<>
 			<div className="absolute bg-[#3fa5d1] w-100% h-[48px]"></div>
 			<Marquee speed={40} gradient={true} autoFill={true}>
-				<div className="flex py-3">
+				<div className="flex py-[10px]">
 					{marqueeVar.map((item, index) => {
 						return (
 							<div

@@ -8,22 +8,28 @@ const Blog = () => {
 		<div className="b-container col">
 			<div id="blog">BLOG</div>
 			<Reveal
-				children={<div className="text-3xl font-bold">Article & News</div>}
+				children={<div className="title font-bold">Article & News</div>}
 				isSlideMotion={false}
 			/>
-			<div className="grid grid-cols-3 gap-10">
-				<div className="col gap-10">
+			<div className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 1</div>}
+						children={<div className="font-bold sub-title">Blog 1</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>
@@ -38,18 +44,24 @@ const Blog = () => {
 						}
 					/>
 				</div>
-				<div className="col gap-10">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 2</div>}
+						children={<div className="font-bold sub-title">Blog 2</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>
@@ -64,18 +76,24 @@ const Blog = () => {
 						}
 					/>
 				</div>
-				<div className="col gap-10">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 3</div>}
+						children={<div className="font-bold sub-title">Blog 3</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>
@@ -90,18 +108,24 @@ const Blog = () => {
 						}
 					/>
 				</div>
-				<div className="col gap-10">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 4</div>}
+						children={<div className="font-bold sub-title">Blog 4</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>
@@ -116,18 +140,24 @@ const Blog = () => {
 						}
 					/>
 				</div>
-				<div className="col gap-10">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 5</div>}
+						children={<div className="font-bold sub-title">Blog 5</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>
@@ -142,18 +172,24 @@ const Blog = () => {
 						}
 					/>
 				</div>
-				<div className="col gap-10">
+				<div className="col gap-5">
 					<Reveal
-						children={<div className="font-bold text-2xl">Blog 6</div>}
+						children={<div className="font-bold sub-title">Blog 6</div>}
 						isSlideMotion={false}
 					/>
 
 					<Reveal
 						children={
-							<div
-								className="w-100% h-[400px] bg-blue-400 pointer"
-								onClick={() => navigate("/blog")}
-							></div>
+							<img
+								className="rounded-lg w-100% h-100% max-w-md object-cover pointer"
+								src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+								alt="image description"
+								onClick={() =>
+									navigate(
+										"/blog?https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
+									)
+								}
+							/>
 						}
 						isSlideMotion={false}
 					/>

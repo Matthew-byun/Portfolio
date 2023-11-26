@@ -1,36 +1,82 @@
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+	const navigate = useNavigate();
+
+	const handleOnClick = (link: string) => {
+		return window.open(link);
+	};
 	return (
-		<div className="b-container pb-10">
-			<div className="grid grid-cols-2">
-				<div className="col justify-between">
-					<div className="text-3xl font-bold">Footer</div>
+		<div className="b-container pb-10 gap-10">
+			<div className="flex flex-wrap lg:grid lg:grid-cols-2 gap-10">
+				<div className="col justify-between gap-4">
+					<div className="title font-bold" id="footer">
+						Matthew
+					</div>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
 						incidunt provident impedit officiis eveniet tempore fugiat adipisci
 						ea ducimus, nulla quo neque. Velit sint modi hic voluptatem non
 						officia dignissimos.
 					</p>
-					<div className="flex gap-4">
-						<p className="tag_footer">FACEBOOK</p>
-						<p className="tag_footer">INSTAGRAM</p>
-						<p className="tag_footer">LINKEDIN</p>
-						<p className="tag_footer">TWITTER</p>
+					<div className="flex flex-wrap lg:flex-nowrap gap-4">
+						<p
+							className="tag_footer"
+							onClick={() =>
+								handleOnClick("https://www.facebook.com/mid.mfriend")
+							}
+						>
+							FACEBOOK
+						</p>
+
+						<p
+							className="tag_footer"
+							onClick={() =>
+								handleOnClick(
+									"https://www.linkedin.com/in/matthew-tc-494854289/"
+								)
+							}
+						>
+							LINKEDIN
+						</p>
+						<p
+							className="tag_footer"
+							onClick={() =>
+								handleOnClick("https://twitter.com/Matthewyun2109")
+							}
+						>
+							TWITTER
+						</p>
 					</div>
 				</div>
 
-				<div className="flex justify-end gap-20">
+				<div className="flex justify-between w-100% lg:justify-end gap-2 lg:gap-20">
 					<div className="col gap-4">
-						<p className="font-medium">Menu</p>
-						<p>Menu 1</p>
-						<p>Menu 2</p>
-						<p>Menu 3</p>
-						<p>Menu 4</p>
+						<p className="sub-title">Menu</p>
+						<p className="pointer" onClick={() => navigate("/")}>
+							Menu 1
+						</p>
+						<p className="pointer" onClick={() => navigate("/")}>
+							Menu 2
+						</p>
+						<p className="pointer" onClick={() => navigate("/")}>
+							Menu 3
+						</p>
+						<p className="pointer" onClick={() => navigate("/")}>
+							Menu 4
+						</p>
 					</div>
 					<div className="col gap-4">
-						<p className="font-medium">Projects</p>
-						<p>Web design</p>
-						<p>Defi app</p>
-						<p>Ecommerce</p>
+						<p className="sub-title">Projects</p>
+						<p className="pointer" onClick={() => navigate("/project")}>
+							Web design
+						</p>
+						<p className="pointer" onClick={() => navigate("/project")}>
+							Defi app
+						</p>
+						<p className="pointer" onClick={() => navigate("/project")}>
+							Ecommerce
+						</p>
 					</div>
 				</div>
 			</div>
