@@ -68,14 +68,17 @@ const Footer = () => {
 					</div>
 					<div className="col gap-4">
 						<p className="sub-title">Projects</p>
-						<p className="pointer" onClick={() => navigate("/project")}>
-							Web design
+						<p className="pointer" onClick={() => navigate("/project?defi")}>
+							Defi
 						</p>
-						<p className="pointer" onClick={() => navigate("/project")}>
-							Defi app
+						<p
+							className="pointer"
+							onClick={() => navigate("/project?launchpad")}
+						>
+							Launchpad
 						</p>
-						<p className="pointer" onClick={() => navigate("/project")}>
-							Ecommerce
+						<p className="pointer" onClick={() => navigate("/project?movie")}>
+							Movie
 						</p>
 					</div>
 				</div>
