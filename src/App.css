@@ -1,0 +1,27 @@
+@tailwind base;
+
+@layer base {
+	body {
+		@apply box-border font-outfit;
+	}
+
+	.col {
+		@apply flex flex-col;
+	}
+
+	.row {
+		@apply flex;
+	}
+
+	.b-container {
+		@apply col gap-4 max-w-[100em] m-auto px-[5em] pb-[150px];
+	}
+
+	.pointer {
+		@apply cursor-pointer;
+	}
+
+	.tag_footer {
+		@apply text-[.9em] leading-[2em] font-[400] pointer;
+	}
+}
